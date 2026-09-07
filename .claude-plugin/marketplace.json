@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "pamonteiro84-plugins",
+  "version": "1.0.0",
+  "description": "Personal plugin marketplace for Claude Code",
+  "owner": {
+    "name": "Paulo Monteiro",
+    "email": "paulo.a.martins.monteiro@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "claude-mem",
+      "displayName": "Claude Mem",
+      "description": "Persistent memory across Claude Code sessions: captures what the agent does, compresses it with AI, and injects the relevant context back into future sessions.",
+      "version": "13.22.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/thedotmack/claude-mem.git",
+        "path": "plugin"
+      },
+      "homepage": "https://github.com/thedotmack/claude-mem",
+      "author": {
+        "name": "Alex Newman"
+      },
+      "category": "productivity",
+      "tags": ["memory", "context", "sessions"]
+    },
+    {
+      "name": "task-observer",
+      "displayName": "Task Observer",
+      "description": "Meta-skill that watches work sessions and logs opportunities to create or improve other skills (One Skill to Rule Them All).",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rebelytics/one-skill-to-rule-them-all.git"
+      },
+      "homepage": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+      "author": {
+        "name": "Eoghan Henn (rebelytics.com)"
+      },
+      "category": "productivity",
+      "tags": ["skills", "meta", "observability"]
+    },
+    {
+      "name": "omniroute",
+      "displayName": "OmniRoute",
+      "description": "AI gateway that unifies 352 providers (Claude, GPT, Gemini, DeepSeek, ...) with automatic fallback and token compression, exposed to Claude Code as an MCP server.",
+      "version": "1.0.0",
+      "source": "./plugins/omniroute",
+      "homepage": "https://github.com/diegosouzapw/OmniRoute",
+      "author": {
+        "name": "Diego Souza"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["mcp", "gateway", "routing"]
+    }
+  ]
+}
